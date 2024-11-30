@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webcam Testing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced Webcam Tester</h1>
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="snapshot" style="display:none;"></canvas>
+    <div id="metrics">
+      <h2>Metrics</h2>
+      <p><strong>Resolution:</strong> <span id="resolution">N/A</span></p>
+      <p><strong>FPS:</strong> <span id="fps">Calculating...</span></p>
+      <p><strong>Latency:</strong> <span id="latency">N/A</span></p>
+      <p><strong>Field of View (FOV):</strong> <span id="fov">N/A</span></p>
+      <p><strong>Color Accuracy:</strong> <span id="color-accuracy">N/A</span></p>
+      <p><strong>Low-Light Performance:</strong> <span id="low-light">N/A</span></p>
+      <p><strong>Audio-Video Sync:</strong> <span id="audio-sync">N/A</span></p>
+    </div>
+    <div class="controls">
+      <button id="capture">Capture Photo</button>
+      <button id="stop">Stop Webcam</button>
+    </div>
+    <p id="status"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
